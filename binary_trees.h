@@ -73,7 +73,8 @@ void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
 /* Height */
 size_t binary_tree_height(const binary_tree_t *tree);
 
-
+/* Depth */
+size_t binary_tree_depth(const binary_tree_t *tree);
 
 
 #endif
