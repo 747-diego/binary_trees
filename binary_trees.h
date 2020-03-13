@@ -87,4 +87,9 @@ size_t binary_tree_nodes(const binary_tree_t *tree);
 
 /* Balance factor */
 int binary_tree_balance(const binary_tree_t *tree);
+
+/* Is full */
+int binary_tree_is_full(const binary_tree_t *tree);
+
+
 #endif
