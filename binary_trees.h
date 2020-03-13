@@ -82,5 +82,6 @@ size_t binary_tree_size(const binary_tree_t *tree);
 /* Leaves  */
 size_t binary_tree_leaves(const binary_tree_t *tree);
 
-
+/* Binary Nodes */
+size_t binary_tree_nodes(const binary_tree_t *tree);
 #endif
