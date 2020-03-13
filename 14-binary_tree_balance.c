@@ -6,12 +6,12 @@
  */
 int binary_tree_balance(const binary_tree_t *tree)
 {
-	size_t LeftLeaf = 0;
-	size_t RightLeaf = 0;
-	size_t SubTotal = 0;
+	int LeftLeaf = 0;
+	int RightLeaf = 0;
+	int SubTotal = 0;
 	const binary_tree_t *BinaryNode = tree;
 
-	if (tree == NULL || (!BinaryNode->left && !BinaryNode->right))
+	if (BinaryNode == NULL || (!BinaryNode->left && !BinaryNode->right))
 		return (0);
 
 	else if (!BinaryNode->left || !BinaryNode->right)
@@ -23,5 +23,6 @@ int binary_tree_balance(const binary_tree_t *tree)
 	LeftLeaf = binary_tree_balance(BinaryNode->left);
 	RightLeaf = binary_tree_balance(BinaryNode->right);
 
-	return (LeftLeaf - RightLeaf);
+	SubTotal = LeftLeaf - RightLeaf;
+	return (SubTotal);
 }
