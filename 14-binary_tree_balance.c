@@ -19,9 +19,9 @@ int binary_tree_balance(const binary_tree_t *tree)
 	else
 		return (2);
 
+
 	LeftLeaf = binary_tree_balance(BinaryNode->left);
 	RightLeaf = binary_tree_balance(BinaryNode->right);
 
-	SubTotal = LeftLeaf - RightLeaf;
-	return (SubTotal);
+	return (LeftLeaf - RightLeaf);
 }
