@@ -11,14 +11,12 @@ int binary_tree_balance(const binary_tree_t *tree)
 	int SubTotal = 0;
 	const binary_tree_t *BinaryNode = tree;
 
-	if (BinaryNode == NULL)
+	if (BinaryNode == NULL || (!BinaryNode->left && !BinaryNode->right))
 		return (0);
-
-    if (BinaryNode->left == NULL && BinaryNode->right == NULL)
-        return (0);
 
 	else if (!BinaryNode->left || !BinaryNode->right)
 		return (-1);
+
 	else
 		return (2);
 
